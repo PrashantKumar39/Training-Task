@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Movement Animation</title>
+  <style>
+    .move-box {
+      width: 100px;
+      height: 100px;
+      background-color: crimson;
+      position: relative;
+      animation: moveRight 5s linear infinite;
+    }
+
+    @keyframes moveRight {
+      0%   { left: 0; }
+      100% { left: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="move-box"></div>
+
+</body>
+</html>
