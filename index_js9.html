@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Task Practice</title>
+</head>
+<body>
+  <h2>Open console to see the output</h2>
+
+  <script>
+    // 1. typeof – Check data types
+    console.log("1.", typeof 123);
+    console.log("1.", typeof "hello");
+
+
+    
+    // 2. Merge (+) string and number
+    let a = "Age: " + 25;
+    console.log("2.", a);
+
+
+
+    // 3. charAt – Get character by index
+    let name = "Prashant";
+    console.log("3.", name.charAt(2));
+
+
+
+    // 4. lastIndexOf – Find last occurrence of substring
+    let text = "hello world hello";
+    console.log("4.", text.lastIndexOf("hello"));
+
+
+
+    // 5. Typecasting string to number and addition
+    let strNum = "12";
+    let result = Number(strNum) + 8;
+    console.log("5.", result);
+
+
+
+
+    // 6. NaN – Invalid arithmetic operation
+    let val = "abc" * 2;
+    console.log("6.", val);
+
+
+
+    // 7. isInteger – Check if value is integer
+    console.log("7.", Number.isInteger(10));
+    console.log("7.", Number.isInteger(10.5));
+
+
+
+    // 8. parseInt and parseFloat – Convert string to number
+    console.log("8.", parseInt("100.56"));
+    console.log("8.", parseFloat("100.56"));
+
+
+
+    // 9. toFixed – Format number to 2 decimal places
+    let floatNum = 12.34567;
+    console.log("9.", floatNum.toFixed(2));
+
+
+
+    // 10. switch – Conditional branching
+    let role = "admin";
+    switch(role) {
+      case "user":
+        console.log("10. User logged in");
+        break;
+      case "admin":
+        console.log("10. Admin logged in");
+        break;
+      default:
+        console.log("10. Unknown");
+    }
+
+
+
+    // 11. var, let, const – Variable scope example
+    var globalVar = "I'm global";
+    function testScope() {
+      let localLet = "I'm local";
+      const localConst = "Also local";
+      console.log("11.", globalVar, localLet, localConst);
+    }
+    testScope();
+
+
+
+    // 12. Array operations – push, pop, shift, unshift, delete
+    let arr = [1, 2, 3, 4];
+    arr.push(5);
+    arr.unshift(0);
+    arr.pop();
+    arr.shift();
+    delete arr[1];
+    console.log("12.", arr);
+
+
+
+    // 13. splice – Remove and replace array elements
+    let spliceArr = [1, 2, 3, 4];
+    spliceArr.splice(1, 2, 9, 9);
+    console.log("13.", spliceArr);
+
+
+
+    // 14. reverse – Reverse array elements
+    let rev = [1, 2, 3, 4];
+    console.log("14.", rev.reverse());
+
+
+
+    // 15. concat – Merge two arrays
+    let arr1 = [1, 2];
+    let arr2 = [3, 4];
+    let merged = arr1.concat(arr2);
+    console.log("15.", merged);
+  </script>
+
+</body>
+</html>
